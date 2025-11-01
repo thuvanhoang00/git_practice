@@ -10,5 +10,10 @@ void print(){
 int main(){
     std::thread t(print);
     t.join();
+    auto l = []()->int{
+        return 1;
+    };
+
+    std::cout << l();
     return 0;
 }
