@@ -2,7 +2,9 @@
 #include <thread>
 
 void print(){
-    std::cout << "threadid: " << std::this_thread::get_id() << " Hello world\n";
+    for(int i=0; i<10; ++i){
+        std::cout << "threadid: " << std::this_thread::get_id() << " Hello world\n";
+    }
 }
 
 int main(){
