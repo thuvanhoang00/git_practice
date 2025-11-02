@@ -3,5 +3,6 @@
 #include <numeric>
 
 int foo(const std::vector<int>& vec){
-    return std::accumulate(vec.begin(), vec.end(), 0);
+    int a=100;
+    return std::accumulate(vec.begin(), vec.end(), a);
 }
